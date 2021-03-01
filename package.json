@@ -1,0 +1,27 @@
+{
+  "name": "fastpi-express-cli",
+  "version": "1.0.0",
+  "description": "A simple cli project to create apis based on MVC",
+  "main": "index.js",
+  "bin": {
+    "fastpi": "build/index.js"
+  },
+  "scripts": {
+    "build": "babel cli --out-dir build",
+    "dev": "babel-node cli/index.js",
+    "start": "node build/index.js"
+  },
+  "keywords": ["CLI, API, express, MVC"],
+  "author": "joaquinns",
+  "license": "ISC",
+  "dependencies": {
+    "@caporal/core": "^2.0.2",
+    "chalk": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.8"
+  }
+}
